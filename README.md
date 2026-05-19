@@ -1,6 +1,6 @@
 # Dev Kumar - Embedded Linux Systems Engineering
 
-Static dark-theme website tailored for embedded Linux systems work: modern C/C++, BSP and boot flow, kernel/user-space boundaries, device drivers, IPC/RPC, protocol streaming, profiling, build tooling, and reliable production delivery.
+Static dark-theme website tailored for 5+ years of embedded Linux systems work: modern C/C++, BSP and boot flow, kernel/user-space boundaries, device drivers, IPC/RPC, protocol streaming, profiling, build tooling, and reliable production delivery.
 
 Live site:
 https://dsp25scm14k.github.io/_dev_EmbeddedLinux_SeniorSoftwareEngineer/

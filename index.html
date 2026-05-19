@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Kumar | Embedded Linux Systems Engineering</title>
+  <meta name="description" content="Dev Kumar builds embedded Linux software, modern C/C++ services, BSPs, device drivers, IPC/RPC systems, profiling workflows, and protocol-heavy telemetry platforms.">
+  <meta name="theme-color" content="#04080c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="kernel-canvas" aria-hidden="true"></canvas>
+  <div class="shell">
+    <header class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Dev Kumar home">
+        <span class="brand-mark">DK</span>
+        <span>
+          <strong>Dev Kumar</strong>
+          <small>Embedded Linux Systems Engineering</small>
+        </span>
+      </a>
+      <nav>
+        <a href="#experience">Experience</a>
+        <a href="#system">System</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-grid" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Modern C/C++, embedded Linux, BSP, device drivers, IPC/RPC, profiling, and protocol systems</p>
+          <h1 id="hero-title">Linux systems code that stays close to the hardware.</h1>
+          <p class="hero-lede">I build software where boot paths, drivers, kernel interfaces, multithreaded services, protocol streams, and profiling evidence have to work together under tight latency and reliability constraints.</p>
+          <div class="signal-line" aria-live="polite">
+            <span class="signal-dot"></span>
+            <span id="dynamic-signal">C++17 request pipelines reduced data-processing latency by 35%</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button ghost" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <img src="assets/embedded-linux-hero.png" alt="Dark embedded Linux system with hardware board, kernel and user-space signal paths, IPC lanes, telemetry traces, memory profiling panels, and scheduling waveforms">
+          <div class="hero-stack" aria-label="Core embedded Linux engineering strengths">
+            <span>C++17</span>
+            <span>Kernel</span>
+            <span>BSP</span>
+            <span>gRPC</span>
+            <span>perf</span>
+            <span>Valgrind</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics reveal" aria-label="Selected systems engineering impact metrics">
+        <article>
+          <strong data-count="35">0</strong>
+          <span>percent lower data-processing latency from modern C++17 pipeline work</span>
+        </article>
+        <article>
+          <strong data-count="40">0</strong>
+          <span>percent smaller serialized payloads through gRPC and Protobuf messaging</span>
+        </article>
+        <article>
+          <strong data-count="30">0</strong>
+          <span>percent lower p99 latency after profiling and benchmark-driven tuning</span>
+        </article>
+        <article>
+          <strong data-count="28">0</strong>
+          <span>percent less unplanned downtime through embedded diagnostics and fault detection</span>
+        </article>
+      </section>
+
+      <section class="craft section-grid reveal" aria-labelledby="craft-title">
+        <div>
+          <p class="eyebrow">Engineering posture</p>
+          <h2 id="craft-title">The interesting problems live where abstractions meet pins, packets, and threads.</h2>
+        </div>
+        <div class="craft-copy">
+          <p>I keep coming back to systems work because it rewards precision: a driver contract, a queue ownership rule, a cache-aware data path, a trace that explains why latency moved, and a build that can be recreated months later.</p>
+          <p>Good embedded engineering feels calm from the outside because the hard work is underneath: disciplined C/C++, small and testable interfaces, visible performance budgets, and debug paths that connect field symptoms to kernel, board, and user-space behavior.</p>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Embedded Linux, modern C/C++, RPC layers, profiling, and reliable production services</h2>
+        </div>
+        <div class="timeline">
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span>Mar 2025 - Present</span>
+              <strong>Sprouts AI</strong>
+              <small>Software Engineer | Chicago, IL, USA</small>
+            </div>
+            <ul>
+              <li>Re-engineered core backend modules in modern C++17 (smart pointers, move semantics, RAII) on Linux, reducing data-processing latency by 35% across high-throughput request pipelines.</li>
+              <li>Designed multithreaded C++ services with lock-free queues and condition-variable synchronization, sustaining 10k+ concurrent requests while integrating cross-language IPC bridges to Python APIs.</li>
+              <li>Built a publish/subscribe RPC layer using gRPC and Protobufs for inter-service messaging, cutting serialized payload size by 40% and round-trip latency by 25%.</li>
+              <li>Instrumented memory and CPU profiling with Valgrind, perf, and AddressSanitizer to detect leaks and hotspots, eliminating 12+ defects and raising service uptime to 99.95%.</li>
+            </ul>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span>Aug 2023 - Mar 2025</span>
+              <strong>Resilience Inc</strong>
+              <small>Software Engineer | Chicago, IL, USA</small>
+            </div>
+            <ul>
+              <li>Developed C++14 backend components on Linux, refactoring legacy modules into modern C++ constructs (smart pointers, move semantics) and cutting average request latency by 15% for high-traffic endpoints.</li>
+              <li>Architected client-server and peer-to-peer communication using REST, WebSockets, JSON, and TLS over TCP/IP sockets, securely handling 500k+ daily transactions across distributed services.</li>
+              <li>Engineered profiling and benchmarking utilities using gprof, perf, and custom telemetry hooks to detect performance bottlenecks, reducing p99 latency by 30% across critical request paths.</li>
+              <li>Streamlined the C++ build process with CMake, Ninja, and clang-tidy across CI/CD pipelines, cutting compile times by 45% on a 200k-LOC codebase while enforcing unit-test and code-review gates.</li>
+            </ul>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span>Apr 2018 - Aug 2023</span>
+              <strong>Tata Steel</strong>
+              <small>Software Engineer</small>
+            </div>
+            <ul>
+              <li>Programmed and maintained low-level C/C++ device drivers on embedded Linux, integrating industrial machines and sensors with central monitoring systems running 24/7 production workloads.</li>
+              <li>Optimized real-time C++ services for manufacturing-line automation by tuning multi-threaded scheduling, cache-aware data structures, and Linux subsystems, reducing control-loop jitter by 40%.</li>
+              <li>Architected publish/subscribe telemetry stack using RTP/RTSP/HLS and JSON over multicast/TCP sockets to stream sensor and video data from 50+ shop-floor embedded nodes to operator dashboards.</li>
+              <li>Built C++ diagnostic tools leveraging Linux BSP and kernel performance counters for proactive fault detection, decreasing unplanned downtime by 28% across the embedded fleet.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="system" class="section system-section reveal" aria-labelledby="system-title">
+        <div class="section-heading">
+          <p class="eyebrow">System Diagram</p>
+          <h2 id="system-title">Embedded Linux path from board support to observable user-space services</h2>
+        </div>
+        <div class="diagram-layout">
+          <div class="diagram-panel" aria-label="Embedded Linux architecture diagram">
+            <svg viewBox="0 0 920 560" role="img" aria-labelledby="diagram-title diagram-desc">
+              <title id="diagram-title">Embedded Linux architecture</title>
+              <desc id="diagram-desc">Hardware and BSP layers flow through bootloader, kernel drivers, IPC bridges, C++ user-space services, protocol streams, and profiling tools.</desc>
+              <defs>
+                <linearGradient id="edge-gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+                  <stop offset="0%" stop-color="#62d6ff"/>
+                  <stop offset="48%" stop-color="#66f2aa"/>
+                  <stop offset="100%" stop-color="#f6b24f"/>
+                </linearGradient>
+                <filter id="glow">
+                  <feGaussianBlur stdDeviation="4" result="blur"/>
+                  <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <path class="flow-track" d="M92 122 C216 62, 322 72, 456 132 S678 198, 830 126"/>
+              <path class="flow-track" d="M92 280 C226 212, 326 212, 456 280 S688 350, 830 282"/>
+              <path class="flow-track" d="M92 438 C226 506, 328 496, 456 430 S684 362, 830 430"/>
+
+              <g class="diagram-node" transform="translate(38 78)">
+                <rect width="200" height="102" rx="22"/>
+                <text x="24" y="42">Hardware</text>
+                <text x="24" y="70">SoC, sensors, buses</text>
+              </g>
+              <g class="diagram-node" transform="translate(358 78)">
+                <rect width="204" height="102" rx="22"/>
+                <text x="24" y="42">Boot + BSP</text>
+                <text x="24" y="70">U-Boot, layers, rootfs</text>
+              </g>
+              <g class="diagram-node" transform="translate(684 78)">
+                <rect width="198" height="102" rx="22"/>
+                <text x="24" y="42">Kernel Space</text>
+                <text x="24" y="70">drivers, ioctl, procfs</text>
+              </g>
+
+              <g class="diagram-node" transform="translate(38 228)">
+                <rect width="200" height="104" rx="22"/>
+                <text x="24" y="42">IPC Bridge</text>
+                <text x="24" y="72">queues, shm, sockets</text>
+              </g>
+              <g class="diagram-core" transform="translate(340 212)">
+                <rect width="242" height="138" rx="30"/>
+                <text x="32" y="54">C++ Services</text>
+                <text x="32" y="88">RAII, threads, atomics</text>
+              </g>
+              <g class="diagram-node" transform="translate(684 228)">
+                <rect width="198" height="104" rx="22"/>
+                <text x="24" y="42">RPC + Streams</text>
+                <text x="24" y="72">gRPC, RTP, multicast</text>
+              </g>
+
+              <g class="diagram-node" transform="translate(38 382)">
+                <rect width="200" height="104" rx="22"/>
+                <text x="24" y="42">Build System</text>
+                <text x="24" y="72">CMake, Ninja, CI</text>
+              </g>
+              <g class="diagram-node" transform="translate(358 382)">
+                <rect width="204" height="104" rx="22"/>
+                <text x="24" y="42">Profiling</text>
+                <text x="24" y="72">perf, ftrace, Valgrind</text>
+              </g>
+              <g class="diagram-node" transform="translate(684 382)">
+                <rect width="198" height="104" rx="22"/>
+                <text x="24" y="42">Fleet Evidence</text>
+                <text x="24" y="72">logs, metrics, faults</text>
+              </g>
+
+              <circle class="pulse one" cx="106" cy="122" r="7"/>
+              <circle class="pulse two" cx="462" cy="280" r="9"/>
+              <circle class="pulse three" cx="830" cy="430" r="7"/>
+            </svg>
+          </div>
+          <div class="system-copy">
+            <article>
+              <span>01</span>
+              <h3>Start from the board</h3>
+              <p>BSP layers, bootloader configuration, kernel options, and root filesystem choices shape the behavior that application code inherits.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Keep boundaries explicit</h3>
+              <p>Device drivers, ioctl paths, shared memory, message queues, and sockets need ownership rules that make concurrency boring.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Measure before tuning</h3>
+              <p>perf, ftrace, Valgrind, sanitizers, and custom telemetry make latency, leaks, jitter, and uptime a visible engineering loop.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-title">Projects with source links, demos where available, and systems-level engineering signal</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card featured">
+            <div>
+              <span class="project-kicker">Linux Kernel</span>
+              <h3>Character Device Driver</h3>
+              <p>Linux character device driver with module lifecycle, ioctl interface, /proc debugging hooks, semaphores, and timers for concurrent access.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div>
+              <span class="project-kicker">Operating Systems</span>
+              <h3>Experimental Operating System</h3>
+              <p>Toy OS built from scratch with scheduling, memory allocation, exception and disk-interrupt handlers, console I/O, processes, and semaphores.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div>
+              <span class="project-kicker">Low-latency C++</span>
+              <h3>CME MDP 3.0 Multicast Feed Handler</h3>
+              <p>C++17 multicast UDP feed handler decoding binary messages, rebuilding order books, and handling replay-style recovery under latency pressure.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-kicker">Kafka + Streaming</span>
+              <h3>Real-time Stock Market Analysis Pipeline</h3>
+              <p>Event-driven streaming pipeline that maps well to telemetry ingestion, high-throughput analytics, and operations dashboards.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-kicker">Agentic AI + Markets</span>
+              <h3>TradeSentinel</h3>
+              <p>Full-stack AI trading insight system with real-time market context, tool-calling, and signal interpretation over live-like data.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">Source</a>
+              <a href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-kicker">RAG + Commerce</span>
+              <h3>AskMyStore</h3>
+              <p>Retrieval-based assistant using LangChain, OpenAI APIs, and vector search for grounded answers over catalog data.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">Source</a>
+              <a href="https://askmystore.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-kicker">AI Research</span>
+              <h3>Comparative Study of Movie Recommendation Systems</h3>
+              <p>IEEE-published recommendation systems work with source notebook and certificate, emphasizing model comparison and evaluation discipline.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">Source</a>
+              <a href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">Certificate</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-kicker">Full-stack Product</span>
+              <h3>STRANGERS</h3>
+              <p>Application project focused on shipping a connected product experience across frontend, backend, and data flows.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-kicker">LLM Search</span>
+              <h3>LangChain Chat with Search</h3>
+              <p>Agent-style search workflow demonstrating tool use, prompt orchestration, and grounded responses over external information.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-kicker">Computer Architecture</span>
+              <h3>16-Bit RISC Processor</h3>
+              <p>Hardware lab work showing datapath/control design and architecture-level reasoning below application layers.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <span class="project-kicker">iOS App</span>
+              <h3>Pitch Perfect</h3>
+              <p>Mobile audio app demonstrating device APIs, UX flow, and a clean feature loop from capture to playback transformation.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Pitch_Perfect" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section reveal" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Ready for embedded Linux systems, modern C/C++ services, driver work, and performance-driven delivery.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:devkumar.dklv@gmail.com">devkumar.dklv@gmail.com</a>
+          <a class="button ghost" href="tel:+13125328223">+1-312-532-8223</a>
+          <a class="button ghost" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button ghost" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
